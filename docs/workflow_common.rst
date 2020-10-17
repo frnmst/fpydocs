@@ -255,7 +255,7 @@ Follow these instructions in sequential order.
 
   ::
 
-      git commit -m "New release."
+      PRE_COMMIT_ALLOW_NO_CONFIG=1 git commit -m "New release."
 
 -
 
