@@ -119,7 +119,7 @@ Follow these instructions in sequential order.
 
   ::
 
-      git commit -m "${commit_message}"
+      git commit -m "An interesing message."
 
 -
 
