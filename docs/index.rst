@@ -14,6 +14,8 @@ Welcome to automated-tasks's documentation!
    contributing
    workflow
    copyright_license
+   contributing_common
+   workflow_common
 
 Indices and tables
 ==================
