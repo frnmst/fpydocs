@@ -28,7 +28,7 @@ doc:
 	pipenv run $(MAKE) -C docs html
 
 install:
-	pip3 install . --user
+	@echo "setup not available for this project"
 
 uninstall:
 	pip3 install $(PACKAGE_NAME)
@@ -41,7 +41,7 @@ uninstall-dev:
 	pipenv --rm
 
 test:
-	pipenv run python setup.py test
+	@echo "tests not available for this project"
 
 clean:
 	rm -rf build dist *.egg-info

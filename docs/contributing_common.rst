@@ -32,6 +32,34 @@ install the software requirements from the Pipfile in the repository's root:
     $ make install-dev
 
 
+This will also install the Python linters among other stuff.
+
+Once you make changes you can install this project to have access to its executable file.
+Install `pip <https://pypi.org/project/pip/>`_ and then:
+
+
+::
+
+
+    $ make install
+
+
+.. note:: don't forget to add ``~/.local/bin`` to ``PATH``.
+
+
+Unit tests
+----------
+
+If you have changed parts of the source code you MUST take care of adding
+the corresponding unit tests. Once you have done that run the following command
+in a terminal:
+
+
+::
+
+    $ make test
+
+
 Documentation
 -------------
 
