@@ -156,12 +156,6 @@ Follow these instructions in sequential order.
 
   ::
 
-      make pep
-
--
-
-  ::
-
       make test
 
 -
