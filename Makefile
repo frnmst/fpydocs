@@ -22,7 +22,7 @@
 
 export PACKAGE_NAME=fpydocs
 
-default: pep doc test
+default: doc
 
 doc:
 	pipenv run $(MAKE) -C docs html

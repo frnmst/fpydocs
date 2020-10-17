@@ -12,6 +12,7 @@ Welcome to automated-tasks's documentation!
 
    introduction
    contributing
+   workflow
    copyright_license
 
 Indices and tables
