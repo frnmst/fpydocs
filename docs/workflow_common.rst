@@ -259,7 +259,7 @@ Follow these instructions in sequential order.
 
   ::
 
-      PRE_COMMIT_ALLOW_NO_CONFIG=1 git commit -m "New release."
+      PRE_COMMIT_ALLOW_NO_CONFIG=1 SKIP=trailing-whitespace,end-of-file-fixer,check-yaml,check-added-large-files,yapf,flake8,bandit,skjold git commit -m "New release."
 
 -
 
