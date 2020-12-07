@@ -1,4 +1,4 @@
 Workflow
 ========
 
-:doc:`Workflow [common] <../workflow_common>` version `0.0.1 <https://github.com/frnmst/fpydocs/releases/tag/0.0.1>`_
+:doc:`Workflow [common] <../workflow_common>` version `1.0.0 <https://github.com/frnmst/fpydocs/releases/tag/1.0.0>`_
