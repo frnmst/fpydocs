@@ -339,8 +339,6 @@ Follow these instructions in sequential order.
 
         cp ./packages/aur/PKGBUILD ${projects_aur_git_directory}
 
- - copy the signature file in ``${projects_aur_git_directory}``
-
  -
 
     ::
