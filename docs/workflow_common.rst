@@ -389,6 +389,7 @@ Follow these instructions in sequential order.
 
         git push
 
+ - update the `frnmst-aur-packages-mirror <https://github.com/frnmst/frnmst-aur-packages-mirror>`_ repository
 
 9. other
 ````````
