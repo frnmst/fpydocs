@@ -24,7 +24,7 @@ export PACKAGE_NAME=fpydocs
 
 default: doc
 
-doc:
+doc: clean
 	pipenv run $(MAKE) -C docs html
 
 install:
