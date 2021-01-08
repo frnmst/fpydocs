@@ -16,6 +16,7 @@ Welcome to fpydocs's documentation!
    copyright_license
    contributing_common
    workflow_common
+   blueprints
 
 Indices and tables
 ==================
