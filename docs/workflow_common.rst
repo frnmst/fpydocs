@@ -235,13 +235,19 @@ Follow these instructions in sequential order.
 
   ::
 
-      git checkout gh-pages
+      git branch --delete gh-pages && git push origin --delete gh-pages
 
 -
 
   ::
 
-      rm -rf _modules _sources _static _images
+      git checkout --orphan  gh-pages
+
+-
+
+  ::
+
+      git clean -f && git clean -f -d
 
 -
 
@@ -259,13 +265,14 @@ Follow these instructions in sequential order.
 
   ::
 
-      PRE_COMMIT_ALLOW_NO_CONFIG=1 SKIP=trailing-whitespace,end-of-file-fixer,check-yaml,check-added-large-files,yapf,flake8,bandit,skjold git commit -m "New release."
+      git commit --no-verify -m "New release."
 
 -
 
   ::
 
-      git push
+      git push --set-upstream origin gh-pages
+
 
 5. merge the branches and tag the release
 `````````````````````````````````````````
@@ -300,6 +307,7 @@ Follow these instructions in sequential order.
 
       git push origin ${version_id}
 
+
 6. upload the package to PyPI
 `````````````````````````````
 
@@ -322,6 +330,7 @@ Follow these instructions in sequential order.
     ::
 
        make upload
+
 
 7. upload the package on the software page
 ``````````````````````````````````````````
