@@ -241,7 +241,13 @@ Follow these instructions in sequential order.
 
   ::
 
-      git checkout --orphan  gh-pages
+      git checkout --orphan gh-pages
+
+-
+
+  ::
+
+      git rm --cached -r .
 
 -
 
