@@ -18,13 +18,13 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 
 project = 'fpydocs'
-copyright = '2020, Franco Masotti'
+copyright = '2020-2021, Franco Masotti'
 author = 'Franco Masotti'
 
 # The short X.Y version.
-version = '1.0.0'
+version = '2.0.0'
 # The full version, including alpha/beta/rc tags
-release = '1.0.0'
+release = '2.0.0'
 
 # Use index.rst.
 master_doc = 'index'

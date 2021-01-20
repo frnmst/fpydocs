@@ -3,7 +3,7 @@ Copyright and License
 
 Unless otherwise noted:
 
-Copyright (C) 2020 Franco Masotti <franco.masotti@live.com>
+Copyright (C) 2020-2021 Franco Masotti <franco.masotti@live.com>
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
