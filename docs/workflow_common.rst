@@ -235,13 +235,13 @@ Follow these instructions in sequential order.
 
   ::
 
-      git branch --delete gh-pages && git push origin --delete gh-pages
+      git branch --delete --force docs
 
 -
 
   ::
 
-      git checkout --orphan gh-pages
+      git checkout --orphan docs
 
 -
 
@@ -277,7 +277,7 @@ Follow these instructions in sequential order.
 
   ::
 
-      git push --set-upstream origin gh-pages
+      git push --force deploy-docs docs
 
 
 5. merge the branches and tag the release
