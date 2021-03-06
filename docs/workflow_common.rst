@@ -341,7 +341,7 @@ Follow these instructions in sequential order.
 7. upload the package on the software page
 ``````````````````````````````````````````
 
-- follow the instructions reported `here <https://frnmst.gitlab.io/software/#upload>`_
+- follow the instructions reported `here <https://blog.franco.net.eu.org/software/#upload>`_
 
 8. update downstream distribution packages
 ``````````````````````````````````````````
