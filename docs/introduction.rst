@@ -1,5 +1,5 @@
 Introduction
 ============
 
-This repository contains common documentation instruction used
+This repository contains common documentation instructions used
 in multiple Python projects.

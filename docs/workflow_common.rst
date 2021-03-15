@@ -38,10 +38,10 @@ Sequence
 
 Follow these instructions in sequential order.
 
-1. setup git signing
-````````````````````
+1. preliminary configuration
+````````````````````````````
 
-- IF not enabled previously
+- IF not enabled previously setup git signing
 
  -
 
@@ -54,6 +54,10 @@ Follow these instructions in sequential order.
     ::
 
         git config user.signingkey ${gpg_signing_key}
+
+
+- IF not enabled previously setup a bare git repository serving
+  static pages. `Follow this blog post <https://blog.franco.net.eu.org/notes/an-alternative-to-github-pages.html>`_
 
 2. finish working on the development branch
 ```````````````````````````````````````````
