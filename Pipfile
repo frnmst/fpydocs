@@ -26,11 +26,11 @@ verify_ssl = true
 
 [dev-packages]
 # Documentation.
-Sphinx = '~=3.4'
+Sphinx = '~=3.5'
 sphinx-rtd-theme = '~=0.5'
 
 # Tools.
-pre-commit = "~=2.9"
+pre-commit = "~=2.10"
 
 [requires]
 python_version = "3.9"
