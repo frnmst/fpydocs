@@ -59,6 +59,28 @@ Follow these instructions in sequential order.
 - IF not enabled previously setup a bare git repository serving
   static pages. `Follow this blog post <https://blog.franco.net.eu.org/notes/an-alternative-to-github-pages.html>`_
 
+- IF `AUR <https://wiki.archlinux.org/index.php/Arch_User_Repository>`_ setup a ``post-receive``
+  git hook in a bare repository. See `this <https://blog.franco.net.eu.org/notes/an-alternative-to-github-pages.html>`_
+  and use the provided "post-receive git hook for AUR packages" blueprint:
+
+ -
+
+    ::
+
+        git init bare path
+
+
+ - copy the blueprint into repo/hooks and set it as executable
+
+ - add the ``pacman`` command to the ones not requiring password in the sudoers file, using ``visudo``:
+
+
+   ::
+
+
+        build-user ALL=NOPASSWD: /bin/pacman
+
+
 2. finish working on the development branch
 ```````````````````````````````````````````
 
@@ -176,7 +198,7 @@ Follow these instructions in sequential order.
 
   ::
 
-      cd ~ && python -c 'import ${package_name}' && cd ${OLDPWD}
+      cd ~ && python3 -c 'import ${package_name}' && cd ${OLDPWD}
 
 -
 
@@ -356,7 +378,31 @@ Follow these instructions in sequential order.
 
     ::
 
-        cp ./packages/aur/PKGBUILD ${projects_aur_git_directory}
+        git push packages-aur
+
+ -
+
+    ::
+
+        git --tags push packages-aur
+
+ -
+
+    ::
+
+        make clean && git checkout packages-aur
+
+ -
+
+    ::
+
+        cp PKGBUILD .SRCINFO ${projects_aur_git_directory}
+
+ -
+
+    ::
+
+        git checkout master
 
  -
 
@@ -364,33 +410,7 @@ Follow these instructions in sequential order.
 
         cd ~/${projects_aur_git_directory}
 
- - update the sha512 checksum in the ``PKGBUILD`` file with the one in the `software page <https://frnmst.gitlab.io/software/>`_
-
- -
-
-    ::
-
-        makepkg -rsi
-
- -
-
-    ::
-
-        rm -rf pkg src *.tar.*
-
- -
-
-    ::
-
-        pacman -Rnus ${pacman_package_name}
-
- -
-
-    ::
-
-        makepkg --printsrcinfo > .SRCINFO
-
- -
+-
 
     ::
 
@@ -407,6 +427,7 @@ Follow these instructions in sequential order.
     ::
 
         git push
+
 
  - update the `frnmst-aur-packages-mirror <https://github.com/frnmst/frnmst-aur-packages-mirror>`_ repository
 
