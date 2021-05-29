@@ -67,7 +67,7 @@ Follow these instructions in sequential order.
 
     ::
 
-        git init bare path
+        git init --bare ${project_name}
 
 
  - copy the blueprint into repo/hooks and set it as executable
@@ -108,19 +108,19 @@ Follow these instructions in sequential order.
 
     ::
 
-        asciinema rec --command=./${project_name}_asciinema_${MAJOR}_${MINOR}_${PATCH}_demo.sh ${project_name}_asciinema_${MAJOR}_${MINOR}_${PATCH}.json
+        pipenv run asciinema rec --command=./${project_name}_asciinema_${MAJOR}_${MINOR}_${PATCH}_demo.sh ${project_name}_asciinema_${MAJOR}_${MINOR}_${PATCH}.json
 
   -
 
     ::
 
-        asciinema play ${project_name}_asciinema_${MAJOR}_${MINOR}_${PATCH}.json
+        pipenv run asciinema play ${project_name}_asciinema_${MAJOR}_${MINOR}_${PATCH}.json
 
   -
 
     ::
 
-        asciinema upload ${project_name}_asciinema_${MAJOR}_${MINOR}_${PATCH}.json
+        pipenv run asciinema upload ${project_name}_asciinema_${MAJOR}_${MINOR}_${PATCH}.json
 
   - edit the ``./README.rst`` file with the new asciinema link
 
@@ -384,13 +384,13 @@ Follow these instructions in sequential order.
 
     ::
 
-        git --tags push packages-aur
+        git push --tags packages-aur
 
  -
 
     ::
 
-        make clean && git checkout packages-aur
+        make clean && git fetch --all && git checkout packages-aur
 
  -
 
