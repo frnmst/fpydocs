@@ -13,10 +13,11 @@ Welcome to fpydocs's documentation!
    introduction
    contributing
    workflow
-   copyright_license
    contributing_common
    workflow_common
    blueprints
+   source_code
+   copyright_license
 
 Indices and tables
 ==================
